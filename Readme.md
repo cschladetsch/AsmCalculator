@@ -4,6 +4,7 @@ This project implements a simple calculator using NASM (Netwide Assembler) that 
 
 ## Sample
 
+```bash
 $ ./r
 Enter an expression: 1+8*3
 Result: 25
