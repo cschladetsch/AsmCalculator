@@ -1,13 +1,13 @@
-# NASM RPN Parser
+# NASM Calculator
 
-This project implements a simple mathematical expression parser using NASM (Netwide Assembler) that converts infix notation to Reverse Polish Notation (RPN). It's designed to run on WSL/Ubuntu environments.
+This project implements a simple calculator using NASM (Netwide Assembler) that evaluates basic arithmetic expressions. It's designed to run on WSL/Ubuntu environments.
 
 ## Features
 
-- Parses basic arithmetic expressions
+- Evaluates basic arithmetic expressions
 - Supports operators: +, -, *, /
 - Handles operator precedence correctly
-- Outputs the expression in Reverse Polish Notation
+- Outputs the result of the expression
 
 ## Prerequisites
 
@@ -15,12 +15,20 @@ This project implements a simple mathematical expression parser using NASM (Netw
 - NASM assembler
 - CMake (version 3.10 or higher)
 
+## Project Structure
+
+- `main.asm`: Main entry point of the program
+- `eval.asm`: Contains the expression evaluation logic
+- `utils.asm`: Utility functions for I/O and number conversion
+- `CMakeLists.txt`: CMake configuration file
+- `README.md`: This file
+
 ## Building the Project
 
 1. Clone the repository:
    ```
-   git clone https://github.com/cschladetsch/AsmRpn.git
-   cd AsmRpn
+   git clone https://github.com/cschladetsch/AsmCalculator.git
+   cd AsmCalculator
    ```
 
 2. Build the project:
@@ -29,12 +37,12 @@ This project implements a simple mathematical expression parser using NASM (Netw
    ```
    This script removes any existing build directory, creates a new one, runs CMake, and builds the project.
 
-## Running the Parser
+## Running the Calculator
 
-After building, you can run the parser using:
+After building, you can run the calculator using:
 
 ```
-./build/nasm_parser
+./build/asm_calculator
 ```
 
 Alternatively, you can use the provided `r` script to build and run in one step:
@@ -45,24 +53,24 @@ Alternatively, you can use the provided `r` script to build and run in one step:
 
 ## Usage Examples
 
-When prompted, enter a mathematical expression. The parser will output the equivalent expression in RPN.
+When prompted, enter a mathematical expression. The calculator will evaluate it and output the result.
 
 Example 1:
 ```
 Enter an expression: 1+2
-Output: 1 2 +
+Result: 3
 ```
 
 Example 2:
 ```
 Enter an expression: 3*4+2
-Output: 3 4 * 2 +
+Result: 14
 ```
 
 Example 3:
 ```
 Enter an expression: 5+6*7-8/2
-Output: 5 6 7 * + 8 2 / -
+Result: 45
 ```
 
 ## Limitations
@@ -77,8 +85,6 @@ Output: 5 6 7 * + 8 2 / -
 - Parentheses handling
 - Additional operators (e.g., exponentiation, modulus)
 - Floating-point number support
-- Variable support
-- Mathematical function support (e.g., sin, cos, log)
 
 ## Contributing
 

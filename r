@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./m && ./build/nasm_parser
+./m && ./build/asm_calculator $*
 
