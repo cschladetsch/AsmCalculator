@@ -1,4 +1,4 @@
-echo Configuration loaded. Type 'revaluate' to start debugging.\n
+echo AsmCalc loaded.
 
 # Project-specific settings
 set disassembly-flavor intel
