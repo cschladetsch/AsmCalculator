@@ -62,28 +62,6 @@ Alternatively, you can use the provided `r` script to build and run in one step:
 ./r
 ```
 
-## Usage Examples
-
-When prompted, enter a mathematical expression. The calculator will evaluate it and output the result.
-
-Example 1:
-```
-Enter an expression: 1+2
-Result: 3
-```
-
-Example 2:
-```
-Enter an expression: 3*4+2
-Result: 14
-```
-
-Example 3:
-```
-Enter an expression: 5+6*7-8/2
-Result: 45
-```
-
 ## Limitations
 
 - Currently only supports single-digit numbers
