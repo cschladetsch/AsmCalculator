@@ -1,4 +1,4 @@
-# NASM Calculator
+# Calculator in Assembly
 
 This project implements a simple calculator using NASM (Netwide Assembler) that evaluates basic arithmetic expressions. It's designed to run on WSL/Ubuntu environments.
 
