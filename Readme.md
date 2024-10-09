@@ -2,6 +2,16 @@
 
 This project implements a simple calculator using NASM (Netwide Assembler) that evaluates basic arithmetic expressions. It's designed to run on WSL/Ubuntu environments.
 
+## Sample
+
+$ ./r
+Enter an expression: 1+8*3
+Result: 25
+Enter an expression: 4*6-8
+Result: 16
+```
+
+
 ## Features
 
 - Evaluates basic arithmetic expressions
